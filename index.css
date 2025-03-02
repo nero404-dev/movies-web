@@ -1,0 +1,324 @@
+.intro {
+    width: 100%;
+}
+
+.intro nav {
+    width: 100%;
+    background-color: var(--red);
+}
+
+.intro nav ul {
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.intro nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: var(--s3);
+    text-align: center;
+}
+
+.intro nav ul li a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: var(--light_grey);
+}
+
+.intro nav ul li a:hover {
+    border-bottom: 0.5px solid var(--light_grey);
+}
+
+.intro .bg {
+    width: 100%;
+    height: 720px;
+    background-image: url(picture/popcorn\ on\ seats.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* .intro .bg #bookmark {
+    height: 15%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+} */
+
+.intro .bg .title {
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px dotted var(--yellow); */
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.intro .bg .title h1 {
+    color: var(--yellow);
+    padding: 30px 0;
+}
+
+.intro .bg .title p {
+    font-size: var(--s3);
+    color: var(--light_grey);
+    padding: 15px 0;
+}
+
+.about {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.about h2 {
+    margin: 10px 0;
+    color: var(--red);
+    border-left: 3px solid var(--yellow);
+    padding-left: 5px;
+}
+
+.about p {
+    font-size: var(--s3);
+    color: var(--text_grey);
+    /* width: 90%; */
+}
+
+.about .about_text {
+    display: block;
+}
+
+.about #vote_img {
+    height: 20%;
+    width: 20%;
+    /* margin-right: 100px; */
+}
+
+.to_vote {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.to_vote p {
+    text-align: center;
+    font-size: var(--s3);
+    color: var(--footer_grey);
+    text-decoration: underline var(--yellow);
+}
+
+.to_vote .vote_btn {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.to_vote .vote_btn a {
+    text-decoration: none;
+}
+
+.to_vote .vote_btn a button {
+    padding: 12px 40px;
+    font-size: var(--s3);
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.to_vote .vote_btn a button:hover {
+    background-color: var(--yellow);
+}
+
+.to_vote .vote_btn a button .fa {
+    padding-left: 5px;
+}
+
+.img_between {
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.img_between #movie_reel_img {
+    width: 40%;
+    height: 40%;
+}
+
+/* .img_between #vote_img {
+    width: 20%;
+    height: 20%;
+} */
+
+footer {
+    width: 100%;
+    background-color: var(--yellow);
+}
+
+footer .footer_row {
+    column-count: 4;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+footer .footer_column {
+    margin: 30px auto;
+}
+
+footer .footer_column a img {
+    height: 50%;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    margin: 20px;
+}
+
+footer .footer_column h2 {
+    color: var(--red);
+    margin: 20px 0;
+}
+
+footer .footer_column ul {
+    width: 100%;
+}
+
+footer .footer_column ul li {
+    font-size: var(--s4);
+    margin: 20px 0;
+    list-style: none;
+}
+
+footer .footer_column h2 .fa {
+    padding-right: 5px;
+    font-size: var(--s3);
+}
+
+footer .footer_column ul li .fa {
+    font-size: var(--s3);
+    padding-right: 5px;
+    color: var(--red);
+}
+
+footer .footer_column ul li a {
+    text-decoration: none;
+    color: var(--footer_grey);
+}
+
+footer .footer_column ul li a:hover {
+    color: var(--red);
+    text-decoration: underline var(--red);
+}
+
+footer .footer_column .icons a {
+    font-size: var(--s2);
+    text-decoration: none;
+    color: var(--footer_grey);
+    margin: 0 10px;
+}
+
+footer .footer_column .icons a:hover {
+    color: var(--red);
+}
+
+footer .footer_row_2 {
+    display: block;
+    text-align: center;
+}
+
+footer .footer_row_2 #thanks {
+    font-size: var(--s4);
+    margin: 5px 0;
+    color: var(--footer_grey);
+}
+
+footer .footer_row_2 #copyright {
+    font-size: var(--s5);
+    padding: 10px 0 20px 0;
+    color: var(--red);
+}
+
+@media screen and (max-width: 414px) {
+    .intro nav {
+        width: 100%;
+    }
+    .intro nav ul {
+        display: block;
+        width: fit-content;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .intro nav ul li {
+        margin: 15px 0;
+        font-size: var(--s3);
+    }
+    .intro .bg {
+        width: 100%;
+        height: 850px;
+        background-image: url(picture/popcorn\ on\ seats\ copy2.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .intro .bg .title {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .intro .bg .title h1 {
+        padding: 100px 0 30px 0;
+    }
+    .intro .bg .title p {
+        font-size: var(--s3);
+        padding: 15px 0;
+    }
+    .about {
+        width: 80%;
+        margin: 30px auto;
+        display: block;
+    }
+    .about h2 {
+        margin: 10px 0;
+        padding-left: 5px;
+    }
+    .about p {
+        font-size: var(--s3);
+    }
+    .about #vote_img {
+        height: 20%;
+        width: 100%;
+        margin: 30px 0;
+    }
+    .img_between {
+        width: 100%;
+        display: block;
+        margin: 30px auto;
+    }
+    .img_between #movie_reel_img {
+        width: 80%;
+        height: 40%;
+    }
+    footer .footer_row {
+        column-count: 1;
+        display: block;
+        width: 100%;
+        height: unset;
+        margin: 0 auto;
+    }
+    footer .footer_column {
+        margin: 30px auto;
+        width: fit-content;
+        text-align: center;
+    }
+    footer .footer_column a img {
+        height: 20%;
+        width: 20%;
+        margin: 20px auto;
+    }
+}
